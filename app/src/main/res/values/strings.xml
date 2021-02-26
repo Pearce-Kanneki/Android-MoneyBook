@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">MoneyBook</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- Dialog -->
+    <string name="dialog_title_date">選擇日期</string>
+    <string name="dialog_title_record_list_title">請選擇類別</string>
+    <string name="dialog_ok">確認</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="select_type_dialog">請選擇輸入類別</string>
+    <string name="dialog_title">提示</string>
+    <string name="dialog_message_back">是否要離開?</string>
+    <string name="dialog_message_delete">是否要刪除%s?</string>
+    <string name="dialog_title_modify">請輸入要修改的名稱</string>
+    <string name="dialog_title_add">請輸入要新增的名稱</string>
+
+    <!-- BottomSheets -->
+    <string name="bottom_sheets_modify">修改</string>
+    <string name="bottom_sheets_delete">刪除</string>
+
+    <!-- Modify Record Activity -->
+    <string name="price">金額</string>
+    <string name="record_item_name">項目</string>
+    <string name="buy_date">日期</string>
+    <string name="record_type">類別</string>
+    <string name="record_desc">說明</string>
+    <string name="sort">類別</string>
+    <string name="report">發票號碼</string>
+    <string name="record_date_hilt">選擇日期</string>
+    <string name="submit">紀錄</string>
+    <string name="note_hint">請輸入備註</string>
+
+    <!-- Home Fragment -->
+    <string name="home_month_title">今日支出</string>
+    <string name="home_month_record">本月總支出</string>
+    <string name="home_month_income">本月總收入</string>
+
+    <!--Scanner Activity -->
+    <string name="scanner_message">請掃描電子發票左邊的QRCode</string>
+
+    <!-- Navigation -->
+    <string name="title_home">首頁</string>
+    <string name="title_record">明細</string>
+    <string name="title_modify_category">類別</string>
+
+    <string-array name="record_title">
+        <item>支出</item>
+        <item>收入</item>
+    </string-array>
+    <string-array name="record_cell_title">
+        <item>明細</item>
+        <item>分類</item>
+    </string-array>
+    <string-array name="record_type">
+        <item>飲食</item>
+        <item>住家</item>
+        <item>交通</item>
+        <item>學習</item>
+        <item>休閒娛樂</item>
+        <item>購物</item>
+        <item>醫療</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="record_type_is">
+        <item>薪資</item>
+        <item>兼職</item>
+        <item>獎金</item>
+        <item>投資獲利</item>
+    </string-array>
+
+
+    <string name="item_price">$ %d</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="item"
+            type="com.kanneki.moneybook.model.TypeItemEntity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_radius"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/imcImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_wysiwyg" />
+
+        <TextView
+            android:id="@+id/itemModifyCategoryName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@{item.name}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imcImageView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

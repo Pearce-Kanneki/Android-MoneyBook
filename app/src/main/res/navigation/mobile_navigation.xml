@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    tools:ignore="InvalidNavigation"
+    app:startDestination="@id/navigation_home">
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.kanneki.moneybook.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_modifyRecord"
+            app:destination="@id/modify_Record" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_record"
+        android:name="com.kanneki.moneybook.ui.record.RecordFragment"
+        android:label="@string/title_record"
+        tools:layout="@layout/fragment_record" >
+        <action
+            android:id="@+id/action_navigation_record_to_modifyRecord"
+            app:destination="@id/modify_Record" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_modify_category"
+        android:name="com.kanneki.moneybook.ui.modifycategory.ModifyCategoryFragment"
+        android:label="@string/title_modify_category"
+        tools:layout="@layout/fragment_modify_category" />
+
+    <fragment
+        android:id="@+id/modify_Record"
+        android:name="com.kanneki.moneybook.ui.modifyrecord.ModifyRecordFragment"
+        android:label="ModifyRecord"
+        tools:layout="@layout/fragment_modify_record"/>
+</navigation>
